@@ -18,7 +18,7 @@ def average_of_squares(list_of_numbers, list_of_weights=None):
     AssertionError: weights and numbers must have same length
 
     """
-    if list_of_weights is not None:
+    if list_of_weights is not None:    
         assert len(list_of_weights) == len(list_of_numbers), \
             "weights and numbers must have same length"
         effective_weights = list_of_weights
@@ -29,7 +29,7 @@ def average_of_squares(list_of_numbers, list_of_weights=None):
         for number, weight
         in zip(list_of_numbers, effective_weights)
     ]
-    return sum(squares)
+    return sum(squares)/len(list_of_numbers)
 
 
 def convert_numbers(list_of_strings):
@@ -38,7 +38,8 @@ def convert_numbers(list_of_strings):
     Example:
     --------
     >>> convert_numbers(["4", " 8 ", "15 16", " 23    42 "])
-    [4, 8, 15, 16]
+    [4.0, 8.0, 15.0, 16.0, 23.0, 42.0]
+
 
     """
     all_numbers = []
