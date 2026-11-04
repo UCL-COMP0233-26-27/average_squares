@@ -19,8 +19,8 @@ The purpose is to provide a simple example of how to use docdoc to generate docu
 #. This is a numbered list.
 #. It has two items too.
 
-
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-
+   
+   content/average-squares-docs
