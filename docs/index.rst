@@ -12,7 +12,6 @@ This is a short programme to take input and calculate the average of squares.  I
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-
-   index.rst
+   
    content/average-squares-docs.rst
 
