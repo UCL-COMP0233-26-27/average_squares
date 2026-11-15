@@ -1,0 +1,6 @@
+# Python cache files
+__pycache__/
+*.pyc
+
+# Sphinx generated HTML and build files
+docs/_build/
