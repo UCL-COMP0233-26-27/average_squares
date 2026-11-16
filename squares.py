@@ -12,9 +12,9 @@ def average_of_squares(list_of_numbers, list_of_weights=None):
     Example:
     --------
     >>> average_of_squares([1, 2, 4])
-    21.0
+    7.0
     >>> average_of_squares([2, 4], [1, 0.5])
-    12.0
+    6.0
     >>> average_of_squares([1, 2, 4], [1, 0.5])
     Traceback (most recent call last):
     ValueError: weights and numbers must have same length
@@ -31,7 +31,7 @@ def average_of_squares(list_of_numbers, list_of_weights=None):
         for number, weight
         in zip(list_of_numbers, effective_weights)
     ]
-    return float(sum(squares))
+    return float(sum(squares) / len(squares))
 
 
 def convert_numbers(list_of_strings):
