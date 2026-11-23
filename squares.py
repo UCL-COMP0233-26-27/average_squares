@@ -62,14 +62,14 @@ if __name__ == "__main__":
     #parser.add_argument('family')
     arguments= parser.parse_args()
 
-    message = average_of_squares(arguments.numbers_strings, arguments.weights_strings)
+    #message = average_of_squares(arguments.numbers_strings, arguments.weights_strings)
     
   
     #numbers_strings = ["1","2","4"]
-    weight_strings = ["1","1","1"]        
+    #weight_strings = ["1","1","1"]        
 
-    numbers = convert_numbers(numbers_strings)
-    #weights = convert_numbers(weight_strings)
+    numbers = convert_numbers(arguments.numbers_strings)
+    weights = convert_numbers(arguments.weight_strings)
     
 
 
@@ -77,7 +77,7 @@ if __name__ == "__main__":
     result = average_of_squares(numbers, weights)
     print(result)
 
-    # >>> average_of_squares([2, 4], [1, 0.5])
+    """# >>> average_of_squares([2, 4], [1, 0.5])
     numbers_strings2 = ["2","4"]
     weight_strings2 = ["1","0.5"]
 
@@ -87,4 +87,4 @@ if __name__ == "__main__":
     result2 = average_of_squares(numbers2, weights2)
     
     print(result2)
-
+"""
