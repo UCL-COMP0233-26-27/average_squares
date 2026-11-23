@@ -69,7 +69,7 @@ if __name__ == "__main__":
     #weight_strings = ["1","1","1"]        
 
     numbers = convert_numbers(arguments.numbers_strings)
-    weights = convert_numbers(arguments.weight_strings)
+    weights = convert_numbers(arguments.weights_strings)
     
 
 
