@@ -1,3 +1,5 @@
+import argparse
+
 """Computation of weighted average of squares."""
 
 
@@ -51,12 +53,12 @@ def convert_numbers(list_of_strings):
 
 
 if __name__ == "__main__":
-    numbers_strings = ["1","2","4"]
-    weight_strings = ["1","1","1"]        
-    
-    numbers = convert_numbers(numbers_strings)
-    weights = convert_numbers(weight_strings)
-    
+    parser = argparse.ArgumentParser(description="Compute average of squares")
+    parser.add_argument("num_str", nargs="+", help="input numbers")
+    args = parser.parse_args()
+
+    numbers = convert_numbers(args.num_str)
+    weights = None
+
     result = average_of_squares(numbers, weights)
-    
     print(result)
