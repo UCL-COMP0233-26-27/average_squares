@@ -59,24 +59,18 @@ if __name__ == "__main__":
     #parser.add_argument('weights_strings')
     arguments= parser.parse_args()
 
-    #message = average_of_squares(arguments.numbers_strings, arguments.weights_strings)
-    
-  
     #numbers_strings = ["1","2","4"]
-    #weight_strings = ["1","1","1"]        
-    weight_strings = None       
+    #weight_strings = ["1","1","1"]              
 
     numbers = convert_numbers(arguments.numbers_strings)
     # weights = convert_numbers(arguments.weights_strings)
     
-
-
-
     # result = average_of_squares(numbers, weights)
     result = average_of_squares(numbers)
     print(result)
 
-    """# >>> average_of_squares([2, 4], [1, 0.5])
+    """
+    # >>> average_of_squares([2, 4], [1, 0.5])
     numbers_strings2 = ["2","4"]
     weight_strings2 = ["1","0.5"]
 
