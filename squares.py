@@ -56,19 +56,20 @@ def convert_numbers(list_of_strings):
 if __name__ == "__main__":
     parser = ArgumentParser(description="Generate averages of squares")
     parser.add_argument('numbers_strings')
+    parser.add_argument('weights_strings')
     #parser.add_argument('--polite','-p', action="store_true")
     #parser.add_argument('personal')
     #parser.add_argument('family')
     arguments= parser.parse_args()
 
-
-
+    message = average_of_squares(arguments.numbers_strings, arguments.weights_strings)
+    
   
     #numbers_strings = ["1","2","4"]
-    #weight_strings = ["1","1","1"]        
+    weight_strings = ["1","1","1"]        
 
     numbers = convert_numbers(numbers_strings)
-    weights = convert_numbers(weight_strings)
+    #weights = convert_numbers(weight_strings)
     
 
 
